@@ -2,9 +2,8 @@ var cacheName='lessons'
 var cacheFiles =[
     'index.html',
     'lessons.webmanifest',
-    "../img/icons/android-chrome-192x192.png",
-    "../img/icons/android-chrome-512x512.png",
-    './images',
+    './images/english.png',
+    './src/images',
     '../public/lessons.webmanifest',
     '../public/manifest.json',
     '../public/manifest.json'
