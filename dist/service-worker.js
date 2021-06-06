@@ -1,13 +1,15 @@
-importScripts("/pwa-coursework/precache-manifest.d778c12367655dfed081c97926bbee1e.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/pwa-coursework/precache-manifest.f7ff6f6c8af4bea8d4c2be02bce12067.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 var cacheName='lessons'
 var cacheFiles =[
     'index.html',
     'lessons.webmanifest',
-    "/img/icons/android-chrome-192x192.png",
-    "/img/icons/android-chrome-512x512.png",
-    '../src/images',
-    '../public/lessons.webmanifest'
+    "../img/icons/android-chrome-192x192.png",
+    "../img/icons/android-chrome-512x512.png",
+    './images',
+    '../public/lessons.webmanifest',
+    '../public/manifest.json',
+    '../public/manifest.json'
 ]
 
 self.addEventListener('install', e=>{
