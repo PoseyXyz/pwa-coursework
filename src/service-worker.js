@@ -2,8 +2,12 @@ var cacheName='lessons'
 var cacheFiles =[
     'index.html',
     'lessons.webmanifest',
-    "/img/icons/android-chrome-192x192.png",
-    "/img/icons/android-chrome-512x512.png"
+    "../img/icons/android-chrome-192x192.png",
+    "../img/icons/android-chrome-512x512.png",
+    './images',
+    '../public/lessons.webmanifest',
+    '../public/manifest.json',
+    '../public/manifest.json'
 ]
 
 self.addEventListener('install', e=>{

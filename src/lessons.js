@@ -5,8 +5,7 @@ let lessons = [
     location:'London',
     price:200,
     spaces:5,
-    imageUrl: './images/maths.png'
-  
+    imageUrl: require('./images/maths.png')  
     }, 
     {
       id:2,
@@ -14,7 +13,7 @@ let lessons = [
     location:'Lagos',
     price:300,
     spaces:5,
-    imageUrl: './images/english.png'
+    imageUrl: require('./images/english.png')
     
     },
      {
@@ -23,7 +22,7 @@ let lessons = [
     location:'Abuja',
     price:200,
     spaces:5,
-        imageUrl: './images/physics.png'
+        imageUrl: require('./images/physics.png')
   
     },
      {
@@ -32,7 +31,7 @@ let lessons = [
     location:'Benin',
     price:190,
     spaces:5,
-    imageUrl: './images/chemistry.png'
+    imageUrl: require('./images/chemistry.png')
     
     },
      {
@@ -41,7 +40,7 @@ let lessons = [
     location:'Zaria',
     price:150,
     spaces:5,
-    imageUrl: './images/biology.png'
+    imageUrl: require('./images/biology.png')
     },
      {
        id:6,
@@ -49,7 +48,7 @@ let lessons = [
     location:'New York',
     price:120,
     spaces:5,
-    imageUrl: './images/art.png'
+    imageUrl: require('./images/art.png')
     },
      {
        id:7,
@@ -57,7 +56,7 @@ let lessons = [
     location:'Osun',
     price:100,
     spaces:5,
-    imageUrl: './images/agric.png'
+    imageUrl: require('./images/agric.png')
     },
      {
        id:8,
@@ -65,7 +64,7 @@ let lessons = [
     location:'London',
     price:100,
     spaces:5,
-    imageUrl: './images/economics.png'
+    imageUrl: require('./images/economics.png')
     },
      {
        id:9,
@@ -73,7 +72,7 @@ let lessons = [
     location:'Ogun',
     price:90,
     spaces:5,
-    imageUrl: './images/history.png'
+    imageUrl: require('./images/history.png')
     },
      {
        id:10,
@@ -81,7 +80,7 @@ let lessons = [
     location:'Malta',
     price:100,
     spaces:5,
-    imageUrl: './images/computers.png'
+    imageUrl: require('./images/computers.png')
     
     },
     {
@@ -90,7 +89,7 @@ let lessons = [
      location:'Ibadan',
      price:1000,
      spaces:5,
-     imageUrl: './images/sports.png'
+     imageUrl: require('./images/sports.png')
      
      },
      {
@@ -99,7 +98,7 @@ let lessons = [
      location:'Zaria',
      price:400,
      spaces:5,
-     imageUrl: './images/nutrition.png'
+     imageUrl:require('./images/nutrition.png')
      
      }
     
