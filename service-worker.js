@@ -1,4 +1,4 @@
-importScripts("/pwa-coursework/precache-manifest.f7ff6f6c8af4bea8d4c2be02bce12067.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/pwa-coursework/precache-manifest.1a8a6f91de4fff9779df8595baee3990.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 var cacheName='lessons'
 var cacheFiles =[
