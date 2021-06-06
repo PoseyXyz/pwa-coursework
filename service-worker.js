@@ -1,12 +1,11 @@
-importScripts("/pwa-coursework/precache-manifest.1a8a6f91de4fff9779df8595baee3990.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/pwa-coursework/precache-manifest.d578187a16008cde9f71cbf5a2427689.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 var cacheName='lessons'
 var cacheFiles =[
     'index.html',
     'lessons.webmanifest',
-    "../img/icons/android-chrome-192x192.png",
-    "../img/icons/android-chrome-512x512.png",
-    './images',
+    './images/english.png',
+    './src/images',
     '../public/lessons.webmanifest',
     '../public/manifest.json',
     '../public/manifest.json'

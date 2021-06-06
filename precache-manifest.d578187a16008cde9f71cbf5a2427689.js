@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pwa-coursework/img/english.056c9088.png"
   },
   {
+    "revision": "056c90887df4be13db7236c5b7b9ab4e",
+    "url": "/pwa-coursework/img/english.png"
+  },
+  {
     "revision": "92cfdf871845ef859712c39aad12cf16",
     "url": "/pwa-coursework/img/history.92cfdf87.png"
   },
@@ -64,11 +68,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pwa-coursework/js/chunk-vendors.aefb9fb4.js"
   },
   {
-    "revision": "690bd79504ba5f1eb726ff1a5545ab05",
+    "revision": "4de05f0a42ed5f68aa3361419be16866",
     "url": "/pwa-coursework/lessons.webmanifest"
   },
   {
-    "revision": "bd5554855aca0380660487b55d9af689",
+    "revision": "46baa77ead5ef6ad328c512a53b03d7e",
     "url": "/pwa-coursework/manifest.json"
   },
   {
