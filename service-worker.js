@@ -1,34 +1,34 @@
-/**
- * Welcome to your Workbox-powered service worker!
- *
- * You'll need to register this file in your web app and you should
- * disable HTTP caching for this file too.
- * See https://goo.gl/nhQhGp
- *
- * The rest of the code is auto-generated. Please don't update this file
- * directly; instead, make changes to your Workbox build configuration
- * and re-run your build process.
- * See https://goo.gl/2aRDsh
- */
+importScripts("/pwa-coursework/precache-manifest.d778c12367655dfed081c97926bbee1e.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+var cacheName='lessons'
+var cacheFiles =[
+    'index.html',
+    'lessons.webmanifest',
+    "/img/icons/android-chrome-192x192.png",
+    "/img/icons/android-chrome-512x512.png",
+    '../src/images',
+    '../public/lessons.webmanifest'
+]
 
-importScripts(
-  "/pwa-coursework/precache-manifest.ed334d9b221027cc75eda18bc7b45731.js"
-);
+self.addEventListener('install', e=>{
+    console.log('Service Worker install');
+    e.waitUntil(
+        caches.open(cacheName).then(cache=>{
+            console.log('Caching all files');
+            return cache.addAll(cacheFiles)
+        })
+    )
+})
 
-workbox.core.setCacheNameDetails({prefix: "groupwork3"});
-
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
-
-/**
- * The workboxSW.precacheAndRoute() method efficiently caches and responds to
- * requests for URLs in the manifest.
- * See https://goo.gl/S9QRab
- */
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
-workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+self.addEventListener('fetch',  e=>{
+    e.respondWith(
+        caches.match(e.request).then(function (r){
+            return r || fetch (e.request).then(function(response){
+                return caches.open(cacheName).then(function(cache){
+                    cache.put(e.request, response.clone())
+                    return response
+                })
+            })
+        })
+    )
+})
